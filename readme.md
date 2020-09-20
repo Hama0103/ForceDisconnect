@@ -1,4 +1,4 @@
-# 通話を強制切断するDiscordBotです
+# 通話を強制切断するDiscordBot
 
  1. Botに管理者権限を付与する  
  2. [A時orA時B分orA:B]と[寝るor落ち]で切断時間を宣言  

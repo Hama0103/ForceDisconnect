@@ -5,8 +5,7 @@ var Reservation = function(member,channelId,startTime) {
   this.startTime = startTime;
   this.endTime = new Date(startTime.getTime());
   //this.endTime.setMinutes(this.endTime.getMinutes()+5);
-  //デモ用
-  this.endTime.setSeconds(15);
+  this.endTime.setHours(this.endTime.getHours()+2);
   this.first = true;
 };
 
@@ -89,7 +88,7 @@ var task = nodeCron.schedule('* * * * *', function() {
   //日付比較用変数
   var now = new Date();
 
-  //5秒進める
+  //3秒進める
   now.setSeconds(now.getSeconds()+3);
 
   //時間のものを絞り込み
